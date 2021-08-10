@@ -1,8 +1,8 @@
 import { proxy, useSnapshot } from 'valtio'
 
 export interface Todo {
-  id: number
-  name: string
+  id: number,
+  name: string,
   completed?: boolean
 }
 
@@ -10,7 +10,7 @@ export const filters: Filter[] = ['all', 'completed']
 type Filter = 'all' | 'completed'
 
 interface Store {
-  todos: Todo[]
+  todos: Todo[],
   filter: Filter
 }
 
